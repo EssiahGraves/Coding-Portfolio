@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="fCC 1.1 - Survey Form.css">
+  </head>
+  <body>
+    <h1 id="title">SplitMaw Survey Form</h1>
+    <p id="description"><i>Thank you for helping to familiarize me with my demographic!</i></p>
+    <hr>
+      <form id="survey-form">
+        <p><label id="name-label"><b>Name: </b></label><input id="name" type="text" placeholder="Enter your preferred name" required></p>
+        <p><label id="email-label"><b>Email: </b></label><input id="email" type="email" placeholder="example@domain.com" required></p>
+        <p><label id="number-label"><b>Age (Optional): </b></label><input id="number" type="number" min="13" max="120" placeholder="Age" ></p>
+        <p><b>How long have you been following my work?</b><br><select id="dropdown" >
+          <option>Less than one year</option>
+          <option>One or two years</option>
+          <option>Two to four years</option>
+          <option>Four or more years</option>
+          <option>Other (I'm not following you)</option>
+        </select></p>
+        <p><b>Where are you following me?</b>
+          <br><input type="checkbox" value="1"> Art Fight
+          <br><input type="checkbox" value="1"> DeviantArt
+          <br><input type="checkbox" value="1"> Fur Affinity
+          <br><input type="checkbox" value="1"> Toyhouse
+          <br><input type="checkbox" value="1"> YouTube
+        </p>
+        <p><b>Have you commissioned me or purchased my character designs?</b>
+          <br><input type="radio" value="3" name="customer-response"> Yes!
+          <br><input type="radio" value="2" name="customer-response"> No.
+          <br><input type="radio" value="1" name="customer-response"> No, but I would like to.
+        </p>
+        <p><b>What kinds of pieces or designs do you want to see more of?</b>
+        <br><textarea placeholder="You can recommend themes, fandoms, aesthetics, etc." cols="50" rows="5"></textarea></p>
+      <p><button id="submit">Submit</button></p>
+    </form>
+  </body>
+</html>

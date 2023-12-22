@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 5px 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: #f3f0ee;
+  font-family: Verdana, Arial;
+  position: relative;
+}
+
+#wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d5cac3;
+  width: 100%;
+  padding: 5px;
+}
+
+#logo {
+  width: 60vw;
+  display: inline-flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+}
+
+#header-img {
+  max-width: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+ul {
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: right;
+  font-size: 10pt;
+}
+
+h1, h2, h3 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+#features {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+p {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+#video {
+  display: flex;
+  margin: 20px auto 40px auto;
+  border: 5px solid #8a6c53;
+  background-color: black;
+  padding: 10px;
+}
+
+#pricing {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#price-box {
+  border: 5px solid #8a6c53;
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  margin: 30px 15px;
+  justify-content: space evenly;
+  background: #d5cac3;
+}
+
+#email {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    padding: 0;
+    margin: 0;
+  }
+  #header-img {
+    margin: auto;
+  }
+  #header-text {
+    display: none;
+  }
+  #logo {
+    width: 50vw;
+    flex-direction: column;
+    text-align: center;
+  }
+  ul {
+    width: 50vw;
+    flex-direction: column;
+    text-align: center;
+  }
+}

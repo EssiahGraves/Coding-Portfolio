@@ -1,0 +1,268 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Tahoma, sans-serif;
+    font-size: 10pt;
+    text-align: center;
+}
+
+html {
+    background-color: black;
+    border-left: 15px solid black;
+    border-right: 15px solid black;
+    scroll-padding-top: 75px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: sticky;
+    z-index: 1;
+}
+
+.navbar, #contact {
+    top: 0;
+    margin: 0;
+    padding: 30px 0;
+    background-color: black; 
+}
+
+.navbar ul, .small-footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+ul li, a, h1, h2, h3, img {
+    transition: all 0.5s ease-in-out;
+}
+
+ul li:hover, img:hover {
+    transform: scale(1.25);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #999999;
+}
+
+a:active {
+    color: #666666;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+h1, h2 {
+    letter-spacing: 0.5rem;
+}
+
+h2, h3 {
+    text-shadow: 2px 2px 0 #333333;
+}
+
+h1 {
+    font-size: 50pt;
+    padding-top: 120px;
+    text-shadow: 3px 3px 0 #333333;
+}
+
+h2 {
+    font-size: 30pt;
+    padding: 60px 0;
+}
+
+h3 {
+    font-size: 20pt;
+}
+
+h4 {
+    font-size: 15pt;
+}
+
+h1:hover {
+    transform: scale(1.25) translateY(-15px);
+    cursor: default;
+}
+
+h2:hover, h3:hover {
+    transform: scale(1.25);
+    cursor: default;
+}
+
+.welcome {
+    font-size: 20pt;
+    font-style: italic;
+    font-weight: normal;
+    margin-top: -10pt;
+    color: #999999;
+    text-shadow: 2px 2px 0 #333333;
+}
+
+hr {
+    max-width: 1600px;
+    width: 85vw;
+    margin: 120px auto 60px auto;
+    border: #999999 double;
+    background-color: #333333;
+}
+
+section {
+    min-height: 900px;
+    margin: 0 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#about-me, #art-portfolio {
+    background-color: #666666;
+}
+
+#coding-portfolio {
+    background-color: #999999;
+}
+
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1400px;
+}
+
+.about-me, .tools {
+    margin: 0 10px 60px 10px;
+    border: #999999 double;
+    padding: 20px 10px 0 10px;
+    background-color: rgba(153, 153, 153, 50%);
+}
+
+.about-me {
+    flex: 75%;
+}
+
+.about-me p, .tools p {
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.tools {
+    flex: 25%;
+}
+
+i {
+    z-index: -1;
+}
+
+.cert-projects, .mock-sites, .certifications {
+    background-color: rgba(102, 102, 102, 50%);
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto 20px auto;
+    border: #666666 double;
+    padding: 10px;
+}
+
+.scroll {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.thumbnail {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 10px 0 10px;
+}
+
+.thumbnail a {
+    font-size: 8pt;
+}
+
+.cert-projects img, .mock-sites img {
+    max-width: 150px;
+    border: #666666 double;
+}
+
+.certifications p {
+    margin: 10px 0;
+}
+
+.cert-button {
+    background-color: #999999;
+    border: #666666 double;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.certifications a {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.certifications a:hover, .thumbnail a:hover {
+    color: #333333;
+}
+
+.certifications a:active, .thumbnail a:active {
+    color: black;
+}
+
+.art-box {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 20px auto;
+    border: #999999 double;
+    padding: 10px;
+    background-color: rgba(153, 153, 153, 50%);
+}
+
+span {
+    font-weight: bold;
+    color: #999999;
+}
+
+#contact {
+    padding: 30px 100px;
+}
+
+.small-footer {
+    display: none;
+}
+
+@media (max-width: 570px) {
+    * {
+        transition: none !important;
+        transform: none !important;
+    }
+    html {
+        scroll-padding-top: 108px;
+    }
+    ul {
+        flex-direction: column;
+        line-height: 1.5rem;
+    }
+    .small-footer {
+        display: inline;
+    }
+    .wide-footer {
+        content-visibility: hidden;
+    }
+    .navbar, #contact {
+        padding: 15px 0;
+    }
+  }

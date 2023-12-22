@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    background-color: gray;
+    min-width: 320px;
+}
+
+div {
+    margin: 150px auto;
+    max-width: 750px;
+    background-color: rgb(209, 209, 209);
+    padding: 50px 20px;
+    border: black solid 3pt;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(61, 61, 61);
+}
+
+h1 {
+    font-size: 50pt;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,74 @@
+body {
+  text-align: center;
+  font-family: Verdana, Arial;
+  background-color: #322F31;
+  color: white;
+}
+
+h1 {
+  font-family: "Long Cang";
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+#header-caption {
+  margin-top: -50px;
+  color: #B6B6B6;
+}
+
+#img-div {
+  margin: 60px auto;
+  border: white solid;
+  background-color: #5A5354;
+  border-radius: 5%;
+  justify-content: center;
+  max-width: 550px;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  min-width: 30%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#img-caption {
+  font-size: 10px;
+  padding: 10px;
+}
+
+ul {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+li {
+  margin: 16px 0;
+}
+
+hr {
+  margin: 30px 0 0 0;
+}
+
+#footer {
+  font-weight: bold;
+  color: #B6B6B6;
+  padding-top: 20px;
+  border-radius: 30%;
+}
+
+a {
+  color: darkorange;
+}
+
+a:hover {
+  color: gold;
+}
+
+#subfooter {
+  font-size: 10px;
+  color: #B6B6B6;
+}
